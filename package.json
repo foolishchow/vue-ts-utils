@@ -19,6 +19,6 @@
   "scripts": {
     "dev:vuex": "node --inspect ./packages/vue-cli-plugin-vuex-gen/lib/index.js",
     "dev": "lerna run dev --parallel",
-
+    "build": "lerna run build --parallel"
   }
 }

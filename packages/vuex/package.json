@@ -5,15 +5,28 @@
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "build": "tsc -b"
   },
   "dependencies": {
-    "@foolishchow/vue-cli-plugin-vuex-gen": "0.0.3"
-  },
-  "devDependencies": {
-    "vue": "^2.6.10"
+    "@foolishchow/vue-cli-plugin-vuex-gen": "^0.1.0"
   },
   "peerDependencies": {
-    "vuex": "^3.0.1"
-  }
+    "vuex": "^2.6.10"
+  },
+  "description": "enable vuex class declaration in typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foolishchow/vue-ts-utils.git"
+  },
+  "homepage": "https://github.com/foolishchow/vue-ts-utils/blob/master/packages/vuex/README.md",
+  "keywords": [
+    "vuex",
+    "generate",
+    "typescript",
+    "class",
+    "decorator",
+    "vue",
+    "cli"
+  ]
 }

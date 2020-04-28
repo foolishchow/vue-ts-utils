@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "build": "tsc -b"
   },
   "dependencies": {
     "typescript": "^3.5.3",
@@ -15,5 +16,19 @@
     "glob-watcher": "5.0.3",
     "globby": "^10.0.1",
     "@foolishchow/tsutil": "^0.0.2"
-  }
+  },
+  "description": "vue-router typescript generator for vue-class-component ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foolishchow/vue-ts-utils.git"
+  },
+  "homepage": "https://github.com/foolishchow/vue-ts-utils/blob/master/packages/vue-cli-plugin-ts-router-gen/README.md",
+  "keywords": [
+    "generate",
+    "vue-router",
+    "vue-class-component",
+    "typescript",
+    "vue",
+    "cli"
+  ]
 }

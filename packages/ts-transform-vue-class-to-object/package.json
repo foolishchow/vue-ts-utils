@@ -1,11 +1,12 @@
 {
-  "name": "ts-transform-vue-class-to-object",
+  "name": "@foolishchow/ts-transform-vue-class-to-object",
   "version": "0.0.1",
   "description": "",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
   "scripts": {
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "build": "tsc -b"
   },
   "author": "",
   "dependencies": {
