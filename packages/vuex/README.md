@@ -1,5 +1,16 @@
 # vuex class wrapper for vue
 
+
+<p>
+    <a href="https://www.npmjs.com/package/@foolishchow/vuex">
+        <img src="https://img.shields.io/npm/v/@foolishchow/vuex.svg" alt="Version">
+    </a> 
+    <a href="https://www.npmjs.com/package/@foolishchow/vuex">
+        <img src="https://img.shields.io/npm/dm/@foolishchow/vuex.svg" alt="Downloads">
+    </a>
+</p>
+
+
 ## install
 
 ```shell
