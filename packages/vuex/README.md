@@ -8,6 +8,9 @@
     <a href="https://www.npmjs.com/package/@foolishchow/vuex">
         <img src="https://img.shields.io/npm/dm/@foolishchow/vuex.svg" alt="Downloads">
     </a>
+    <a href="https://www.npmjs.com/package/@foolishchow/vuex">
+        <img src="https://img.shields.io/npm/dw/@foolishchow/vuex.svg" alt="Downloads">
+    </a>
 </p>
 
 
