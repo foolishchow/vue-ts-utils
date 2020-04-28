@@ -9,6 +9,9 @@
     <a href="https://www.npmjs.com/package/@foolishchow/vue-cli-plugin-ts-router-gen">
         <img src="https://img.shields.io/npm/dm/@foolishchow/vue-cli-plugin-ts-router-gen.svg" alt="Downloads">
     </a>
+    <a href="https://www.npmjs.com/package/@foolishchow/vue-cli-plugin-ts-router-gen">
+        <img src="https://img.shields.io/npm/dw/@foolishchow/vue-cli-plugin-ts-router-gen.svg" alt="Downloads">
+    </a>
 </p>
 ## install
 
