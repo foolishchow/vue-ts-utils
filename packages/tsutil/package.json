@@ -1,0 +1,17 @@
+{
+  "name": "@foolishchow/tsutil",
+  "version": "0.0.3",
+  "typings": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@phenomnomnominal/tsquery": "^3.0.0",
+    "@types/node": "^12.6.2",
+    "tsutils": "^3.14.0",
+    "typescript": "^3.5.3"
+  },
+  "private": false
+}

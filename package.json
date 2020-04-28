@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/vue-cli-plugin-ts-router-gen",
+    "packages/vue-cli-plugin-vuex-gen",
+    "packages/ts-transform-vue-class-to-object",
+    "packages/vuex",
+    "packages/tsutil"
+  ],
+  "devDependencies": {
+    "vue": "^2.6.10",
+    "lerna": "^3.13.4"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "foolishchow <foolishchow@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev:vuex": "node --inspect ./packages/vue-cli-plugin-vuex-gen/lib/index.js",
+    "dev": "lerna run dev --parallel",
+
+  }
+}

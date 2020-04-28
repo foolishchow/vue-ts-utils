@@ -1,0 +1,19 @@
+{
+  "name": "@foolishchow/vuex",
+  "version": "0.1.0",
+  "typings": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@foolishchow/vue-cli-plugin-vuex-gen": "0.0.3"
+  },
+  "devDependencies": {
+    "vue": "^2.6.10"
+  },
+  "peerDependencies": {
+    "vuex": "^3.0.1"
+  }
+}

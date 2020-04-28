@@ -1,0 +1,19 @@
+{
+  "name": "@foolishchow/vue-cli-plugin-ts-router-gen",
+  "version": "0.1.0",
+  "private": false,
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "typescript": "^3.5.3",
+    "@types/glob": "^7.1.1",
+    "@types/node": "^12.6.2",
+    "@types/glob-watcher": "^5.0.0",
+    "glob-watcher": "5.0.3",
+    "globby": "^10.0.1",
+    "@foolishchow/tsutil": "^0.0.2"
+  }
+}
