@@ -9,8 +9,8 @@
     "packages/tsutil"
   ],
   "devDependencies": {
-    "vue": "^2.6.10",
-    "lerna": "^3.13.4"
+    "lerna": "^3.13.4",
+    "vue": "^2.6.10"
   },
   "version": "1.0.0",
   "main": "index.js",
