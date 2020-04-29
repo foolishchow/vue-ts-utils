@@ -1,6 +1,6 @@
 {
   "name": "@foolishchow/vue-cli-plugin-ts-router-gen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "lib/index.js",
   "license": "MIT",
@@ -9,13 +9,17 @@
     "build": "tsc -b"
   },
   "dependencies": {
-    "typescript": "^3.5.3",
-    "@types/glob": "^7.1.1",
-    "@types/node": "^12.6.2",
-    "@types/glob-watcher": "^5.0.0",
     "glob-watcher": "5.0.3",
     "globby": "^10.0.1",
-    "@foolishchow/tsutil": "^0.0.2"
+    "@foolishchow/tsutil": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "^12.6.2",
+    "@types/glob-watcher": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.5.3"
   },
   "description": "vue-router typescript generator for vue-class-component ",
   "repository": {

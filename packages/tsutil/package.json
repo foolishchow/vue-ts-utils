@@ -1,6 +1,6 @@
 {
   "name": "@foolishchow/tsutil",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
   "license": "MIT",
@@ -8,13 +8,17 @@
     "dev": "tsc -w"
   },
   "dependencies": {
-    "@phenomnomnominal/tsquery": "^3.0.0",
-    "@types/node": "^12.6.2",
-    "tsutils": "^3.14.0",
+    "@phenomnomnominal/tsquery": "^4.0.0",
+    "tsutils": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2"
+  },
+  "peerDependencies": {
     "typescript": "^3.5.3"
   },
   "private": false,
-  "description": "typescript utils used in `@foolishchow/vue-cli-plugin-ts-reoter-gen` and `@foolishchow/vue-cli-plugin-vuex-gen`",
+  "description": "typescript utils used in `@foolishchow/vue-cli-plugin-ts-router-gen` and `@foolishchow/vue-cli-plugin-vuex-gen`",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/foolishchow/vue-ts-utils.git"

@@ -1,6 +1,6 @@
 {
   "name": "@foolishchow/vuex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
   "license": "MIT",
@@ -8,10 +8,8 @@
     "dev": "tsc -w",
     "build": "tsc -b"
   },
-  "dependencies": {
-    "@foolishchow/vue-cli-plugin-vuex-gen": "^0.1.0"
-  },
   "peerDependencies": {
+    "@foolishchow/vue-cli-plugin-vuex-gen": "^0.1.1",
     "vuex": "^2.6.10"
   },
   "description": "enable vuex class declaration in typescript",

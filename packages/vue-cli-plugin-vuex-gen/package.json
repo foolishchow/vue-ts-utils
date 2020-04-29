@@ -1,6 +1,6 @@
 {
   "name": "@foolishchow/vue-cli-plugin-vuex-gen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
@@ -8,16 +8,18 @@
     "build": "tsc -b"
   },
   "dependencies": {
-    "@foolishchow/tsutil": "^0.0.2",
+    "@foolishchow/tsutil": "^0.0.4",
     "@phenomnomnominal/tsquery": "^3.0.0",
-    "@types/glob-watcher": "^5.0.0",
     "glob-watcher": "5.0.3",
-    "globby": "^10.0.1",
-    "typescript": "^3.5.3"
+    "globby": "^10.0.1"
   },
   "devDependencies": {
+    "@types/glob-watcher": "^5.0.0",
     "@types/webpack": "^4.32.2",
     "@types/webpack-chain": "^5.2.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.5.3"
   },
   "description": "vuex typescript generator",
   "repository": {
