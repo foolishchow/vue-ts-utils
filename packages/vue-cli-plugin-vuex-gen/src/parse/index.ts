@@ -218,7 +218,7 @@ export class VuexParser extends EventEmitter {
     fileInfo.cache.moduleCachesInRoot.forEach(cache => {
       generated.EnhancedCommit = generated.EnhancedCommit.concat(cache.EnhancedCommit)
       generated.InnerCommits = generated.InnerCommits.concat(cache.InnerCommit)
-      generated.InnerDispatchs = generated.InnerCommits.concat(cache.InnerDispatch)
+      generated.InnerDispatchs = generated.InnerDispatchs.concat(cache.InnerDispatch)
       generated.EnhancedDispatch = generated.EnhancedDispatch.concat(cache.EnhancedDispatch)
       generated.Getters = generated.Getters.concat(cache.Getters);
       generated.DispatchPayloads = generated.DispatchPayloads.concat(cache.DispatchPayloads);

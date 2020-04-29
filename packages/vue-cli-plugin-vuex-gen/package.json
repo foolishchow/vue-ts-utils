@@ -1,6 +1,6 @@
 {
   "name": "@foolishchow/vue-cli-plugin-vuex-gen",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "lib/index.js",
   "license": "MIT",
   "scripts": {
