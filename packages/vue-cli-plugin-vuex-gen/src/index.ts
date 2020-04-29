@@ -17,7 +17,7 @@ function initVueCli(api: any, projectOptions: any) {
   if (env != "development") {
     api.chainWebpack((config: Config) => {
       let opt = projectOptions.pluginOptions.vuexGen || projectOptions.pluginOptions.vuexgen;
-      let alias = config.resolve.alias || {};
+      let alias: any = config.resolve.alias || {};
       config.plugin("vuex-generate")
         .use(BuildPlugin, [opt, alias])
     })

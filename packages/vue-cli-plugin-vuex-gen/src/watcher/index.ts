@@ -135,14 +135,15 @@ export class Service extends EventEmitter {
 
   emitFile(fileName: string) {
     let Program = this.services.getProgram()!;
-    let outPut = this.services.getEmitOutput(fileName, true);
+    let outPut = this.services.getEmitOutput(fileName, true, true);
+
     let file = getDtsFile(outPut);
     if (!file) {
       return;
     }
     let sourceFile = Program.getSourceFile(fileName)!;
     global.TypeChecker = Program.getTypeChecker();
-    this.vuexParser.addFile(fileName, sourceFile, tsquery.ast(file.text, file.name))
+    this.vuexParser.addFile(fileName, sourceFile, tsquery.ast(file.text, file.name));
   }
 
 }
