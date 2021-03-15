@@ -19,6 +19,7 @@ export namespace VueRouteGen {
     path: string,
     parent?: string,
     meta: any;
+    extra?: any;
     show: boolean;
     sort: number;
   }
@@ -59,6 +60,7 @@ export interface PageConfig {
   show: boolean
   sort: number;
   meta: any;
+  extra: any;
 }
 
 export interface FileCache {
@@ -138,7 +140,8 @@ export class Programer extends EventEmitter {
               title: (tags.title || "").toString(),
               show: tags.show as any,
               sort: (tags as any).sort || 255,
-              meta: new Function(`return ${tags.meta || "{}"}`)()
+              meta: new Function(`return ${tags.meta || "{}"}`)(),
+              extra: tags.extra
             }
             if (tags.parent) {
               config.parent = tags.parent.toString();
@@ -209,7 +212,8 @@ export class Programer extends EventEmitter {
           parent: route.parent ? this.CachedNames.get(route.parent)! : undefined,
           show: route.show,
           meta: route.meta,
-          sort: route.sort
+          sort: route.sort,
+          extra: route.extra
         })
       })
     })
@@ -311,9 +315,13 @@ export class Programer extends EventEmitter {
       if (value.show == false) {
         return undefined;
       }
+      if (key == "extra") {
+        if (!value) return undefined;
+        return `_$extra$_${value}_$extra$_`;
+      }
       if (key == "component") return undefined;
       return value;
-    }, 4);
+    }, 4).replace(/\"_\$extra\$_/g, "").replace(/_\$extra\$_\"/g, "");
     return {
       route: route.replace(/"class\s(\w+)\s{}"/g, (w, $1) => $1),
       menu: menuRoute.replace(/"class\s(\w+)\s{}"/g, (w, $1) => $1),

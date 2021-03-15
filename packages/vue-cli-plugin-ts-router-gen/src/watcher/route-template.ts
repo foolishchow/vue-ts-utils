@@ -47,7 +47,8 @@ export type RouterMenus = {
   name: string;
   path: string;
   children?:RouterMenus[];
-  meta:any
+  meta:any,
+  extra?:any
 }
 export const AppMenuRoutes:RouterMenus[] = ${MenuRoute};
 
